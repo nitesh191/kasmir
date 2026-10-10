@@ -1399,6 +1399,10 @@ p {
   .nav-cta { display: none; }
   .mobile-toggle { display: flex; }
 
+  .layers-grid {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
   .experience-grid {
     grid-template-columns: repeat(2, 1fr);
   }
