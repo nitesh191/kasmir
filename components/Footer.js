@@ -88,6 +88,10 @@ export default function Footer() {
             |{' '}
             <Link href="/terms" className="footer-link">
               Terms
+            </Link>{' '}
+            |{' '}
+            <Link href="/policies/booking" className="footer-link">
+              Booking Policy
             </Link>
           </p>
           <div className="footer-social">
