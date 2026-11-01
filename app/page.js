@@ -153,10 +153,10 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="hero-scroll">
+        <a href="#what-is-kashir-wath" className="hero-scroll" aria-label="Scroll down to explore">
           <span>Explore</span>
           <div className="hero-scroll-line" />
-        </div>
+        </a>
       </section>
 
       {/* ===== WHAT IS KASHIR WATH ===== */}

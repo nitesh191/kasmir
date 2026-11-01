@@ -17,7 +17,7 @@ export default function BookingPolicy() {
         title="Booking, Cancellation & Refund Policy"
         subtitle="Travel safety, force majeure and our approach to responsible travel."
         breadcrumbs={[
-          { label: 'Policies', href: '/policies/booking' },
+          { label: 'Policies', href: '/policies' },
           { label: 'Booking & Cancellation' },
         ]}
         compact

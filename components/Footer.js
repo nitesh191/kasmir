@@ -39,6 +39,7 @@ const footerLinks = {
       { label: 'Kashir Journal', href: '/journal' },
       { label: 'Contact', href: '/contact' },
       { label: 'FAQs', href: '/faqs' },
+      { label: 'Legal & Policies', href: '/policies' },
     ],
   },
 }
@@ -82,6 +83,10 @@ export default function Footer() {
         <div className="footer-bottom">
           <p className="footer-copyright">
             © {new Date().getFullYear()} Kashir Wath. All rights reserved. |{' '}
+            <Link href="/policies" className="footer-link">
+              Legal & Policies
+            </Link>{' '}
+            |{' '}
             <Link href="/privacy" className="footer-link">
               Privacy
             </Link>{' '}

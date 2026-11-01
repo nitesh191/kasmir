@@ -16,7 +16,10 @@ export default function PrivacyPolicy() {
         label="Privacy"
         title="Privacy Policy"
         subtitle="How we collect, use and protect your information — with care and transparency."
-        breadcrumbs={[{ label: 'Privacy Policy' }]}
+        breadcrumbs={[
+          { label: 'Policies', href: '/policies' },
+          { label: 'Privacy Policy' },
+        ]}
         compact
       />
 
