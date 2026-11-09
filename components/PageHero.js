@@ -49,36 +49,12 @@ export default function PageHero({
             {label}
           </span>
         )}
-        <h1
-          style={{
-            fontFamily: 'var(--font-heading)',
-            fontSize: 'clamp(2.25rem, 5vw, 4rem)',
-            fontWeight: 300,
-            lineHeight: 1.15,
-            letterSpacing: '-0.01em',
-            color: '#FFFFFF',
-            marginTop: '0.5rem',
-            marginBottom: '1rem',
-            maxWidth: '900px',
-            textShadow: '0 2px 18px rgba(0, 0, 0, 0.7)',
-          }}
-        >
+        <h1 className="page-hero-title">
           {title}
         </h1>
         <div className="gold-divider gold-divider-left" />
         {subtitle && (
-          <p
-            style={{
-              fontFamily: 'var(--font-accent)',
-              fontStyle: 'italic',
-              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
-              color: 'var(--color-ivory-warm)',
-              marginTop: '1.25rem',
-              maxWidth: '680px',
-              lineHeight: 1.6,
-              textShadow: '0 2px 12px rgba(0, 0, 0, 0.8)',
-            }}
-          >
+          <p className="page-hero-subtitle">
             {subtitle}
           </p>
         )}
