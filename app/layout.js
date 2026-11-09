@@ -1,4 +1,4 @@
-import { Cormorant_Garamond, Inter, Cormorant } from 'next/font/google'
+import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
@@ -7,24 +7,24 @@ const cormorantGaramond = Cormorant_Garamond({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],
-  variable: '--font-heading',
+  variable: '--font-cormorant-garamond',
   display: 'swap',
 })
 
-const inter = Inter({
-  subsets: ['latin'],
-  weight: ['300', '400', '500', '600', '700'],
-  variable: '--font-body',
-  display: 'swap',
-})
-
-const cormorant = Cormorant({
+const dmSans = DM_Sans({
   subsets: ['latin'],
   weight: ['300', '400', '500', '600', '700'],
   style: ['normal', 'italic'],
-  variable: '--font-accent',
+  variable: '--font-dm-sans',
   display: 'swap',
 })
+
+export const viewport = {
+  themeColor: '#0A0A0A',
+  colorScheme: 'dark',
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export const metadata = {
   title: {
@@ -67,7 +67,7 @@ export default function RootLayout({ children }) {
   return (
     <html
       lang="en"
-      className={`${cormorantGaramond.variable} ${inter.variable} ${cormorant.variable}`}
+      className={`${cormorantGaramond.variable} ${dmSans.variable}`}
     >
       <body>
         <Header />

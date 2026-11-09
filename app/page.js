@@ -208,8 +208,8 @@ export default function Home() {
                     marginTop: '1.5rem',
                   }}
                 >
-                  "For some, Kashir is a destination. For others, it is a part of who
-                  they are. We honour both."
+                  &ldquo;For some, Kashir is a destination. For others, it is a part of who
+                  they are. We honour both.&rdquo;
                 </p>
                 <Link
                   href="/discover/more-than-a-destination"
@@ -535,10 +535,10 @@ export default function Home() {
                   detail should feel considered, not just arranged.
                 </p>
                 <div style={{ display: 'flex', gap: '1rem', marginTop: '2rem', flexWrap: 'wrap' }}>
-                  <Link href="/stay-service/philosophy" className="btn btn-outline">
+                  <Link href="/discover/kashir-vaas" className="btn btn-outline">
                     Our Stay Philosophy
                   </Link>
-                  <Link href="/stay-service/service-standards" className="btn btn-ghost">
+                  <Link href="/about/promise" className="btn btn-ghost">
                     Service Standards
                   </Link>
                 </div>

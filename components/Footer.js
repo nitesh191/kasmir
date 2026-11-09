@@ -51,7 +51,7 @@ export default function Footer() {
         <div className="footer-grid">
           <div className="footer-brand">
             <Link href="/" className="logo" style={{ textDecoration: 'none' }}>
-              <span className="logo-name">KASHIR WATH</span>
+              <span className="logo-name">Kashir Wath</span>
               <span className="logo-tagline">Soulful Journeys Through Kashir</span>
             </Link>
             <p>
@@ -59,10 +59,18 @@ export default function Footer() {
               discover Kashir beyond conventional tourism. We curate journeys of meaning,
               memory and discovery.
             </p>
-            <div style={{ marginTop: '1.5rem', display: 'flex', gap: '1rem' }}>
+            <div style={{ marginTop: '1.5rem', display: 'flex', gap: '0.75rem', flexWrap: 'wrap' }}>
               <Link href="/plan-your-journey" className="btn btn-primary btn-sm">
                 Plan Your Journey
               </Link>
+              <a
+                href="https://wa.me/919999999999"
+                className="btn btn-outline btn-sm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                WhatsApp
+              </a>
             </div>
           </div>
 
@@ -82,19 +90,19 @@ export default function Footer() {
 
         <div className="footer-bottom">
           <p className="footer-copyright">
-            © {new Date().getFullYear()} Kashir Wath. All rights reserved. |{' '}
+            © {new Date().getFullYear()} Kashir Wath. All rights reserved. &bull;{' '}
             <Link href="/policies" className="footer-link">
               Legal & Policies
             </Link>{' '}
-            |{' '}
+            &bull;{' '}
             <Link href="/privacy" className="footer-link">
               Privacy
             </Link>{' '}
-            |{' '}
+            &bull;{' '}
             <Link href="/terms" className="footer-link">
               Terms
             </Link>{' '}
-            |{' '}
+            &bull;{' '}
             <Link href="/policies/booking" className="footer-link">
               Booking Policy
             </Link>

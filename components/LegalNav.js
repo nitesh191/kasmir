@@ -17,7 +17,6 @@ const legalLinks = [
 
 export default function LegalNav() {
   const pathname = usePathname()
-
   const isSubPolicy = pathname !== '/policies'
 
   return (
@@ -25,7 +24,7 @@ export default function LegalNav() {
       {isSubPolicy && (
         <div className="legal-nav-header">
           <Link href="/policies" className="legal-back-link">
-            <span aria-hidden="true">←</span> Back to all policies
+            <span aria-hidden="true">&larr;</span> Back to all policies
           </Link>
         </div>
       )}
@@ -43,6 +42,7 @@ export default function LegalNav() {
               key={link.href}
               href={link.href}
               className={isActive ? 'active' : ''}
+              aria-current={isActive ? 'page' : undefined}
             >
               {link.label}
             </Link>
@@ -52,4 +52,3 @@ export default function LegalNav() {
     </div>
   )
 }
-

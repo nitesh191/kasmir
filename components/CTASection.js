@@ -14,9 +14,11 @@ export default function CTASection({
       className="section-lg"
       style={{
         background:
-          'linear-gradient(180deg, var(--color-black) 0%, var(--color-black-soft) 50%, var(--color-black) 100%)',
+          'radial-gradient(ellipse at 50% 50%, rgba(20, 20, 20, 0.95) 0%, rgba(10, 10, 10, 0.98) 100%)',
         position: 'relative',
         overflow: 'hidden',
+        borderTop: '1px solid rgba(197, 165, 90, 0.15)',
+        borderBottom: '1px solid rgba(197, 165, 90, 0.15)',
       }}
     >
       <div
@@ -26,19 +28,34 @@ export default function CTASection({
           backgroundImage: 'url(/images/hero.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          opacity: 0.12,
+          opacity: 0.08,
+          filter: 'grayscale(40%)',
+        }}
+      />
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '320px',
+          height: '1px',
+          background: 'linear-gradient(90deg, transparent, var(--color-gold), transparent)',
         }}
       />
       <div className="container" style={{ position: 'relative', zIndex: 2 }}>
-        <div style={{ textAlign: 'center', maxWidth: '700px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', maxWidth: '720px', margin: '0 auto' }}>
           <span className="section-label">{label}</span>
           <h2
             style={{
               fontFamily: 'var(--font-heading)',
               fontSize: 'clamp(2.25rem, 5vw, 3.75rem)',
               fontWeight: 300,
-              marginBottom: '1.5rem',
-              marginTop: '1rem',
+              lineHeight: 1.15,
+              color: '#FFFFFF',
+              letterSpacing: '-0.01em',
+              marginBottom: '1rem',
+              marginTop: '0.75rem',
             }}
           >
             {title}
@@ -48,10 +65,11 @@ export default function CTASection({
             style={{
               fontFamily: 'var(--font-accent)',
               fontStyle: 'italic',
-              fontSize: 'var(--text-lg)',
-              color: 'var(--color-warm-gray)',
+              fontSize: 'clamp(1.1rem, 2vw, 1.35rem)',
+              color: 'var(--color-ivory-warm)',
               marginBottom: '2.5rem',
-              marginTop: '1.5rem',
+              marginTop: '1.25rem',
+              lineHeight: 1.6,
             }}
           >
             {subtitle}
@@ -59,9 +77,10 @@ export default function CTASection({
           <div
             style={{
               display: 'flex',
-              gap: '1rem',
+              gap: '1.25rem',
               justifyContent: 'center',
               flexWrap: 'wrap',
+              alignItems: 'center',
             }}
           >
             {primaryCta && (
