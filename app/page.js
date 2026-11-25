@@ -699,6 +699,118 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===== BEYOND KASHIR (REGIONAL EXPANSION) ===== */}
+      <section
+        className="section-lg"
+        id="beyond-kashir"
+        style={{
+          background: 'var(--color-black-light)',
+          borderTop: '1px solid rgba(197, 165, 90, 0.16)',
+          borderBottom: '1px solid rgba(197, 165, 90, 0.16)',
+        }}
+      >
+        <div className="container">
+          <RevealOnScroll>
+            <SectionHeader
+              label="Beyond Kashir · The Journey Continues"
+              title="Expand the Geography, Not the Cultural Identity"
+              subtitle="While Kashmir remains the heart of Kashir Wath, Beyond Kashir opens two independent regional worlds — Jammu and Ladakh — each honoured in its own voice, heritage, and terrain."
+              cta="Explore Beyond Kashir"
+              ctaHref="/beyond-kashir"
+            />
+          </RevealOnScroll>
+
+          <div
+            className="feature-grid"
+            style={{
+              gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
+              marginTop: '3rem',
+              gap: 'var(--space-8)',
+            }}
+          >
+            <RevealOnScroll delay={1}>
+              <Link
+                href="/beyond-kashir/jammu"
+                style={{ textDecoration: 'none', display: 'block', height: '100%' }}
+              >
+                <div className="layer-card" style={{ minHeight: '400px', height: '100%' }}>
+                  <div className="layer-card-bg">
+                    <img
+                      src="/images/discover.jpg"
+                      alt="Beyond Kashir — Discover Jammu"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="layer-card-overlay" />
+                  <div className="layer-card-content">
+                    <span className="layer-card-number">Regional World 01</span>
+                    <h3 className="layer-card-name">Discover Jammu</h3>
+                    <p className="layer-card-sub">
+                      Devpath · Virasat · Parvat Path · Prakriti
+                    </p>
+                    <p className="layer-card-desc">
+                      Sacred Shiva & Shakti shrines, Dogra royal heritage, Basohli miniature art,
+                      Bhaderwah’s cedar valleys, and traditional Duggar kitchens.
+                    </p>
+                    <span
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '1rem',
+                        color: 'var(--color-gold)',
+                        fontSize: 'var(--text-sm)',
+                        fontWeight: 500,
+                      }}
+                    >
+                      Explore Jammu →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </RevealOnScroll>
+
+            <RevealOnScroll delay={2}>
+              <Link
+                href="/beyond-kashir/ladakh"
+                style={{ textDecoration: 'none', display: 'block', height: '100%' }}
+              >
+                <div className="layer-card" style={{ minHeight: '400px', height: '100%' }}>
+                  <div className="layer-card-bg">
+                    <img
+                      src="/images/winter.jpg"
+                      alt="Beyond Kashir — Discover Ladakh"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className="layer-card-overlay" />
+                  <div className="layer-card-content">
+                    <span className="layer-card-number">Regional World 02</span>
+                    <h3 className="layer-card-name">Discover Ladakh</h3>
+                    <p className="layer-card-sub">
+                      Monasteries · High Passes · Balti & Changpa Heritage
+                    </p>
+                    <p className="layer-card-desc">
+                      Trans-Himalayan Buddhist gompas, slow acclimatised passages across Nubra and
+                      Pangong, and living Ladakhi and Balti village traditions.
+                    </p>
+                    <span
+                      style={{
+                        display: 'inline-block',
+                        marginTop: '1rem',
+                        color: 'var(--color-gold)',
+                        fontSize: 'var(--text-sm)',
+                        fontWeight: 500,
+                      }}
+                    >
+                      Explore Ladakh →
+                    </span>
+                  </div>
+                </div>
+              </Link>
+            </RevealOnScroll>
+          </div>
+        </div>
+      </section>
+
       {/* ===== PLAN YOUR JOURNEY CTA ===== */}
       <section
         className="section-lg"

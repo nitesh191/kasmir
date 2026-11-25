@@ -28,7 +28,9 @@ const footerLinks = {
       { label: 'Family Journeys', href: '/journeys/family' },
       { label: 'Tailor-Made', href: '/journeys/tailor-made' },
       { label: 'Premium Kashmir', href: '/journeys/premium' },
-      { label: 'Plan Your Journey', href: '/plan-your-journey' },
+      { label: 'Beyond Kashir', href: '/beyond-kashir' },
+      { label: 'Discover Jammu', href: '/beyond-kashir/jammu' },
+      { label: 'Discover Ladakh', href: '/beyond-kashir/ladakh' },
     ],
   },
   about: {
@@ -37,6 +39,7 @@ const footerLinks = {
       { label: 'About Us', href: '/about' },
       { label: 'The Founder', href: '/about/founder' },
       { label: 'Kashir Journal', href: '/journal' },
+      { label: 'Plan Your Journey', href: '/plan-your-journey' },
       { label: 'Contact', href: '/contact' },
       { label: 'FAQs', href: '/faqs' },
       { label: 'Legal & Policies', href: '/policies' },

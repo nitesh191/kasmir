@@ -54,6 +54,20 @@ const navItems = [
       { label: 'Premium Kashmir', href: '/journeys/premium' },
     ],
   },
+  {
+    label: 'Beyond Kashir',
+    href: '/beyond-kashir',
+    children: [
+      { label: 'Beyond Kashir Overview', href: '/beyond-kashir' },
+      { label: 'Discover Jammu', href: '/beyond-kashir/jammu' },
+      { label: 'Discover Ladakh', href: '/beyond-kashir/ladakh' },
+      { label: 'Explore Journeys', href: '/beyond-kashir/journeys' },
+      { label: 'Devpath · Sacred Jammu', href: '/beyond-kashir/jammu/devpath' },
+      { label: 'Virasat · Dogra Heritage', href: '/beyond-kashir/jammu/virasat' },
+      { label: 'Parvat Path · Mountains', href: '/beyond-kashir/jammu/parvat-path' },
+      { label: 'Prakriti · Wilderness', href: '/beyond-kashir/jammu/prakriti' },
+    ],
+  },
   { label: 'Journal', href: '/journal' },
   {
     label: 'About',
